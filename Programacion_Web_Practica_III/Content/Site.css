@@ -1,0 +1,62 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+#nav a {
+    color: #000000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
+    #nav a:hover {
+        color: #3dc1d3;
+    }
+
+#footer {
+    background-color: #1e272e;
+}
+
+#tw:hover {
+   content:url("/images/icons/icon-twitter-hover.jpg");
+}
+#fb:hover {
+    content: url("/images/icons/icon-facebook-hover.jpg");
+}
+#pin:hover {
+    content: url("/images/icons/icon-pinterest-hover.jpg");
+}
+#gplus:hover {
+    content: url("/images/icons/icon-googleplus-hover.jpg");
+}
+
+#jum {
+    background-image: url("/images/the-beacon.jpg");
+    background-size: cover;
+   
+}
+
+.imgcard {
+    width:300px;
+    height:300px;
+}

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title -MUSTACCHIO</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div id="header" class="container">
+        <div class="nav justify-content-center mb-5">
+            <img src="~/images/logo.jpg" alt="Logo" />
+        </div>
+        <ul class="nav justify-content-center" id="nav">
+            <li>@Html.ActionLink("INICIO", "Index", "Home", new { @class = "nav-link font-weight-bold ml-3" })</li>
+            <li>@Html.ActionLink("NOSOTROS", "About", "Home", new { @class = "nav-link font-weight-bold ml-3" })</li>
+            <li>@Html.ActionLink("GALERÍA", "Gallery", "Home", new { @class = "nav-link font-weight-bold ml-3" })</li>
+            <li>@Html.ActionLink("BLOG", "Blog", "Home", new { @class = "nav-link font-weight-bold ml-3" })</li>
+            <li>@Html.ActionLink("CONTACTO", "Contact", "Home", new { @class = "nav-link font-weight-bold ml-3" })</li>
+        </ul>
+    </div>
+    <div class="container body-content" id="content">
+        @RenderBody()
+        <footer class=" container p-4" id="footer">
+            <div class="row mt-4 mb-4">
+
+                <div id="copyright" class="col-6">
+                    <p class="text-white mt-2">Manuel Eduardo Sánchez Valdez 2017-4921</p>
+                </div>
+
+                <div id="social" class="col ml-5 d-flex justify-content-end">
+                    <a href="https://twitter.com/EduardoSanz_122" target="_blank"> <img class="ml-5" src="~/images/icons/icon-twitter.jpg" id="tw"/></a>
+                    <a href="https://www.facebook.com/manueleduardo.sanchezvaldez" target="_blank"><img class="ml-2" src="~/images/icons/icon-facebook.jpg" id="fb"/></a>
+                    <a href="https://www.pinterest.es/" target="_blank"><img class="ml-2" src="~/images/icons/icon-pinterest.jpg" id="pin"  /></a>
+                    <a href="https://plus.google.com/?hl=es" target="_blank"><img class="ml-2" src="~/images/icons/icon-googleplus.jpg" id="gplus" /></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
